@@ -86,11 +86,20 @@ public class PortfolioBean implements Serializable{
 		this.portfolioDescription = portfolioDescription;
 	}
 	
+	public void setPortfolioStatus(String portfolioStatus) {
+		this.portfolioStatus = portfolioStatus;
+	}
+	
+	public String getPortfolioStatus() {
+		return portfolioStatus;
+	}
+	
 	public PortfolioBean(PortfolioModel portfolioModel) {
 		this.portfolioName = portfolioModel.portfolioName();
 		this.portfolioDescription = portfolioModel.portfolioDescription();
 		this.portfolioGithubLink = portfolioModel.portfolioGithubLink();
 		this.portfolioUrl = portfolioModel.portfolioUrl();
+		this.portfolioStatus = portfolioModel.portfolioStatus();
 	}
 	
 	public PortfolioBean() {}
